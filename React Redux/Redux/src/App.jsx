@@ -3,20 +3,20 @@ import Count from "./components/Count";
 import { useDispatch } from "react-redux";
 
 const Counter = () => {
-  const useDispatch = useDispatch();
+  const Dispatch =  useDispatch();
   return (
     <div>
         <p>Counter</p>
         <Count/>
         <button
         onClick={e=>{
-            useDispatch({type: 'INCREMENT'})
+            Dispatch({type: 'INCREMENT'})
         }}
         >
         INCREMENT</button>
         <button
                 onClick={e=>{
-            useDispatch({type: 'DECREMENT'})
+            Dispatch({type: 'DECREMENT'})
         }}
         >DECREMENT</button>
     </div>
