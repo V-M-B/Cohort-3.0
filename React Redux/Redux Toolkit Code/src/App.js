@@ -9,7 +9,7 @@ function App() {
       <Cart />
       <div className="products">
         {products.map((product) => (
-          <Product {...product} />
+          <Product key={product.id} {...product} />
         ))}
       </div>
     </div>

@@ -3,8 +3,10 @@ import { useSelector } from "react-redux";
 import { getItemsSelector } from "../redux/slices/cartSlice";
 
 const Cart = () => {
-  const items = useSelector(getItemsSelector);
-  const total = items.reduce((a, b) => a + b.price, 0);
+  const items=useSelector(getItemsSelector)
+  const total =items.reduce((a, b) => a + b.price, 0);
+
+ 
   return (
     <div className="alert alert-success">
       <h3 className="text-center">
